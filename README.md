@@ -14,6 +14,7 @@ At last, we will be defining a function that takes symptoms separated by commas 
 
 # Implementation:
 
+![image](https://github.com/surajmhulke/Disease-prediction/assets/136318267/f9f45618-5f2f-4b60-a1a1-018d6f210775)
 
 
 
@@ -35,6 +36,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 %matplotlib inline
 Reading the dataset
 Firstly we will be loading the dataset from the folders using the pandas library. While reading the dataset we will be dropping the null column. This dataset is a clean dataset with no null values and all the features consist of 0’s and 1s. Whenever we are solving a classification task it is necessary to check whether our target column is balanced or not. We will be using a bar plot, to check whether the dataset is balanced or not.  
+![image](https://github.com/surajmhulke/Disease-prediction/assets/136318267/54a9f9b9-97cd-4123-abd5-fe8de34ade06)
 
 # Reading the train.csv by removing the 
  last column since it's an empty column
@@ -191,6 +193,9 @@ Accuracy on test data by SVM Classifier: 100.0
 Accuracy on train data by Naive Bayes Classifier: 100.0
 Accuracy on test data by Naive Bayes Classifier: 100.0
 
+![image](https://github.com/surajmhulke/Disease-prediction/assets/136318267/b4758c46-c0a0-4004-b0fe-3de01b906063)
+![image](https://github.com/surajmhulke/Disease-prediction/assets/136318267/ec66028a-f68f-458d-aec6-3222504209a7)
+![image](https://github.com/surajmhulke/Disease-prediction/assets/136318267/e4abd2b4-66ef-45a3-b756-87b05c0fd609)
 
 Accuracy on train data by Random Forest Classifier: 100.0
 Accuracy on test data by Random Forest Classifier: 100.0
@@ -236,6 +241,7 @@ Output:
 
 Accuracy on Test dataset by the combined model: 100.0
 
+![image](https://github.com/surajmhulke/Disease-prediction/assets/136318267/6eedf01b-f95f-477a-8430-bc2444b05e40)
 
 We can see that our combined model has classified all the data points accurately. We have come to the final part of this whole implementation, we will be creating a function that takes symptoms separated by commas as input and outputs the predicted disease using the combined model based on the input symptoms.
 
